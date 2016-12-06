@@ -1,0 +1,14 @@
+<view class="list-item"wx:for="{{long}}">
+    <view class="h">
+        <image class="img" mode=""src="{{item.image}}"></image>
+        <view class="author">{{item.author}}</view>
+    </view>
+    <view class="context">{{item.content}}</view>
+</view>
+<view class="list-item"wx:for="{{short}}">
+    <view class="h">
+        <image class="img" mode=""src="{{item.image}}"></image>
+        <view class="author">{{item.author}}</view>
+    </view>
+    <view class="context">{{item.content}}</view>
+</view>

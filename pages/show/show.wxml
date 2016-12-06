@@ -1,0 +1,6 @@
+<view>{{content}}</view>
+<view class="info">
+    <view class="info-math">{{zan}}</view>
+    <view class="info-zan">赞</view>
+    <navigator url="/pages/comment/comment?id={{id}}" class="read">查看评论</navigator>
+</view>

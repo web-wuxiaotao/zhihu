@@ -1,0 +1,148 @@
+.box{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    transform: translate3d(-500px,0,0);
+    transition: all 0.8s;
+}
+.active{
+    transform: translate3d(0,0,0);
+}
+.box .mask{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    background: rgba(0,0,0,0.5);
+}
+.box .themes{
+    width: 240px;
+    height: 100%;
+    background: #fafafa;
+    font-family: '微软雅黑';
+    position: relative;
+    z-index: 10;
+}
+.box .themes .head{
+    height: 160rpx;
+    background: #0000cc;
+    margin-bottom: 20rpx;
+}
+.box .themes .t-item{
+    font-size: 16px;
+    margin-left: 40rpx;
+    line-height: 75rpx;
+    color: #333;
+    border-bottom: 1px dotted rgba(3,3,3,0.3);
+}
+
+.button{
+    width: 100rpx;
+    height: 100rpx;
+    border-radius: 50%;
+    background: #f38518;
+    position: fixed;
+    right: 30rpx;
+    bottom: 30rpx;
+    z-index: 10;
+}
+
+.start-image{
+    position: fixed;
+    top:0;
+    left:0;
+    right: 0;
+    bottom:0;
+    margin: auto;
+    background: #FFFFFF;
+    z-index: 10000;
+}
+.start-image .img{
+    width: 100%;
+    height: 100%;
+}
+
+.swiper{
+    width: 100%;
+    height: 400rpx;
+}
+.swiper .swiper-item{
+    position: relative;
+}
+.swiper .swiper-item .item-title{
+    position: absolute;
+    left: 4%;
+    bottom: 20rpx;
+    width: 92%;
+    color: #fafafa;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+
+.today{
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+    height: 100rpx;
+    width: 100%;
+    line-height: 100rpx;
+    font-size: 15px;
+    color: #999999;
+    padding: 20rpx 40rpx;
+    background: rgba(200, 200, 200, 0.2);
+    box-sizing: border-box;
+}
+
+
+
+
+
+.newsLists{
+    width: 100%;
+    height: auto;
+    background: rgba(200, 200, 200, 0.2);
+}
+.newsLists .list{
+    height: 160rpx;
+    width: 96%;
+    margin: 0 auto;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+    position: relative;
+    margin-bottom: 20rpx;
+    border-radius: 15rpx;
+}
+.newsLists .list .list-title{
+    width: 70%;
+    height: 120rpx;
+    line-height: 60rpx;
+    overflow: hidden;
+    font-size: 16px;
+    font-family: "pingfang";
+    position: absolute;
+    top: 10rpx;
+    left: 10rpx;
+}
+.newsLists .list .list-img{
+    width: 140rpx;
+    height: 140rpx;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 10rpx;
+    margin: auto;
+}
+.newsLists .list .list-hours{
+    height: 40rpx;
+    position: absolute;
+    bottom: 0;
+    left: 10rpc;
+    line-height: 40rpx;
+    color: #ccc;
+    font-size: 12rpx
+}

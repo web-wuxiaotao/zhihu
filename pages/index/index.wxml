@@ -1,0 +1,38 @@
+<view class="box {{active?'active':''}}">
+    <view class="mask" bindtap="mask"></view>
+    <view class="themes">
+        <view class="head"></view>
+        <view class="t-item" wx:for="{{themes}}">
+            <navigator url="/pages/list/list?title={{item.name}}&id={{item.id}}">{{item.name}}</navigator>
+        </view>
+    </view>
+</view>
+
+<view animation="{{fade}}"class="start-image">
+    <image bindload="setFade"class="img"mode="aspectFill"src="{{startImage}}"></image>
+</view>
+
+<view class="button" bindtap="tapButton"></view>
+
+<swiper class="swiper" indicator-dots="{{true}}" bindchange="change"  autoplay="{{autoplay}}" interval="{{interval}}">
+    <block wx:for="{{tops}}">
+        <swiper-item class="swiper-item" style="background-size: cover;background-image: url({{item.image}})">
+            <view class="item-title">
+                {{item.title}}
+            </view>
+        </swiper-item>
+    </block>
+</swiper>
+
+<view class="today">今日热文</view>
+
+<view class="newsLists" indicator-dots="{{true}}">
+    <block wx:for="{{lists}}">
+        <view class="list" bindtap="tap" data-title="{{item.title}}" data-id="{{item.id}}">
+            <view class="list-title">
+                {{item.title}}
+            </view>
+            <view class="list-img" style="background-image: url({{item.image}})"></view>
+        </view>
+    </block>
+</view>

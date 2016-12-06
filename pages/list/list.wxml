@@ -1,0 +1,24 @@
+<!--pages/list/list.wxml-->
+<view class="bg" style="background-size: cover;;background-image: url({{datas.background}})"></view>
+
+<view class="editors">
+    <view class="editor">主编:</view>
+    <block wx:for="{{datas.editors}}">
+        <view class="pic">
+            <image src="{{item.image}}" class="avatar"></image>
+        </view>
+    </block>
+</view>
+
+<view class="newsLists" indicator-dots="{{true}}">
+    <block wx:for="{{datas.stories}}" wx:key="id">
+        <navigator url="/pages/show/show?id={{item.id}}&title={{item.title}}">
+            <view class="list" data-title="{{item.title}}" data-id="{{item.id}}">
+                <view class="list-title">{{item.title}}</view>
+                <view class="list-img" style="background-image: url({{item.image}})"></view>
+            </view>
+        </navigator>
+    </block>
+</view>
+
+

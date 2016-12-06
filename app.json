@@ -1,0 +1,16 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/show/show",
+    "pages/list/list",
+    "pages/comment/comment"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#3333333",
+    "navigationBarTextStyle": "#fafafa",
+    "navigationBarTitleText": "知乎",
+    "backgroundColor": "#363636",
+    "backgroundTextStyle": "light",
+    "enablePullDownRefresh": true
+  }
+}

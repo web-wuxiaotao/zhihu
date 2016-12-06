@@ -1,0 +1,13 @@
+/* pages/show/show.wxss */
+.info .info-math{
+    float: right;
+    margin-right: 4%;
+}
+.info .info-zan{
+    float: right;
+    margin-right: 2%;
+}
+.info .read{
+    float: left;
+    margin-left:4%;
+}
